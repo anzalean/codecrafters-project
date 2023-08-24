@@ -1,0 +1,9 @@
+.hero-section{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 717px;
+    width: 375px;
+ background-repeat: no-repeat;
+    background-image:url(../img/hero-product-mob-1.jpg);
+}
