@@ -26,7 +26,10 @@
 .price-list {}
 
 
-.price-list-item {}
+.price-list-item {
+    display: flex;
+
+}
 
 
 .price-mebles-title {
@@ -39,9 +42,6 @@
     text-transform: uppercase;
     position: relative;
     transition: all 0.9s ease-in-out;
-
-
-
 }
 
 .price-mebles-title:hover {
@@ -69,4 +69,5 @@
     font-style: normal;
     font-weight: 700;
     line-height: 1.5;
+
 }
