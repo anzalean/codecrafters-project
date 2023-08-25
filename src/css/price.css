@@ -1,0 +1,72 @@
+.price-section {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.price-title {
+    color: var(--sapphire-main-cl);
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.41;
+    text-transform: uppercase;
+    text-align: center;
+    visibility: hidden;
+}
+
+.price-container {
+    display: flex;
+    width: 100%;
+    max-width: 343px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.price-list {}
+
+
+.price-list-item {}
+
+
+.price-mebles-title {
+    color: var(--sapphire-main-cl);
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.9s ease-in-out;
+
+
+
+}
+
+.price-mebles-title:hover {
+    transform: translateX(70px);
+}
+
+
+.price-mebles-title:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -70px;
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.price-mebles-dollars {
+    color: var(--sapphire-main-cl);
+    text-align: right;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+}
