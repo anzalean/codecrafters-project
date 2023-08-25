@@ -4,6 +4,7 @@
   | default @import url()
   |============================
 */
+@import url('./base.css');
 @import url('./reset.css');
 @import url('./header.css');
 @import url('./hero.css');
@@ -14,8 +15,3 @@
 @import url('./clients-reviews.css');
 @import url('./subscription.css');
 @import url('./footer.css');
-
-:root {
-  --primary-font: 'Roboto', sans-serif;
-  --hero-title-font: 'Playfair Display', sans-serif;
-}
