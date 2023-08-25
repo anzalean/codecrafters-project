@@ -1,7 +1,7 @@
 .header-logo-icon {
-  fill: #0a224a;
+  fill: var(--sapphire-main-cl);
 }
 
 .header-menu-icon {
-  stroke: #0a224a;
+  stroke: var(--sapphire-main-cl);
 }
