@@ -1,5 +1,5 @@
 .hero-section {
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 375px;
   }
   .hero-container {
@@ -18,7 +18,7 @@
     }
   }
   
-  .hero-title {
+  .hero-titel {
     text-transform: uppercase;
     width: 286px;
     color: var(--blue-font, #0a224a);
@@ -31,11 +31,11 @@
   .hero-text {
     margin-bottom: 28px;
     color: var(--blue-font, #0a224a);
-    font-family: var(--primary-font);
+    font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-  
+    letter-spacing: 0.04em;
   }
   .hero-btn {
     background-color: #0a224a;
@@ -52,7 +52,7 @@
   @media screen and (min-width: 768px) {
     .hero-section {
       max-width: 768px;
-      padding: 64px 32px 0;
+      padding: 0 32px;
     }
     .hero-container {
       margin: 0 auto;
@@ -68,12 +68,12 @@
       (min-resalution: 2dppx) {
       .hero-container {
         background-image: url(../img/hero/hero-product-tab-1-2x.jpg),
-        url(../img/hero/hero-product-tab-2-2x.jpg);
+          url(../img/hero/hero-product-tab-2-2x.jpg);
         background-size: 308px 329px, 364px 531px;
       }
     }
   
-    .hero-title {
+    .hero-titel {
       margin-bottom: 410px;
       color: var(--blue-font, #0a224a);
       font-size: 50px;
@@ -87,13 +87,12 @@
       width: 312px;
       margin-bottom: 30px;
       font-size: 18px;
-
     }
   }
   @media screen and (min-width: 1440px) {
     .hero-section {
       max-width: 1440px;
-      padding: 64px 60px 0;
+      padding: 0 60px;
     }
     .hero-container {
       background-image: url(../img/hero/hero-product-1.jpg),
@@ -107,12 +106,12 @@
       (min-resalution: 2dppx) {
       .hero-container {
         background-image: url(../img/hero/hero-product-1-2x.jpg),
-        url(../img/hero/hero-product-2-2x.jpg), url(../img/hero/hero-product-3-2x.jpg);
+          url(../img/hero/hero-product-2-2x.jpg), url(../img/hero/hero-product-3-2x.jpg);
         background-size: 310px 329px, 648px 530px, 312px 337px;
       }
     }
-    .hero-title {
-      margin-bottom: 248px;
+    .hero-titel {
+      margin-bottom: 246px;
       width: 648px;
     }
     .hero-container-text-btn {
