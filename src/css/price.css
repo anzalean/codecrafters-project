@@ -5,7 +5,6 @@
 
 .price-title {
     color: var(--sapphire-main-cl);
-    font-family: Roboto;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -16,6 +15,11 @@
 }
 
 .price-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.price-list {
     display: flex;
     width: 100%;
     max-width: 343px;
@@ -23,18 +27,16 @@
     gap: 30px;
 }
 
-.price-list {}
-
 
 .price-list-item {
     display: flex;
-
+    justify-content: space-between;
+    align-items: center;
 }
 
 
 .price-mebles-title {
     color: var(--sapphire-main-cl);
-    font-family: Roboto;
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
@@ -69,5 +71,4 @@
     font-style: normal;
     font-weight: 700;
     line-height: 1.5;
-
 }
