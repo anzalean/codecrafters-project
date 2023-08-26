@@ -18,7 +18,7 @@
     }
   }
   
-  .hero-titel {
+  .hero-title {
     text-transform: uppercase;
     width: 286px;
     color: var(--blue-font, #0a224a);
@@ -35,7 +35,6 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    letter-spacing: 0.04em;
   }
   .hero-btn {
     background-color: #0a224a;
@@ -73,7 +72,7 @@
       }
     }
   
-    .hero-titel {
+    .hero-title {
       margin-bottom: 410px;
       color: var(--blue-font, #0a224a);
       font-size: 50px;
@@ -110,7 +109,7 @@
         background-size: 310px 329px, 648px 530px, 312px 337px;
       }
     }
-    .hero-titel {
+    .hero-title {
       margin-bottom: 246px;
       width: 648px;
     }
