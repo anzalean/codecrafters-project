@@ -6,12 +6,12 @@ li{
 
 
 .clients-reviews-section {
-    background: var(--light-blue, #F7FAFF);
-    padding: 36px 16px 60px 16px;
+    background: var(--lightblue-cl, #F7FAFF);
+    padding: 36px 16px 36px 16px;
 }
 
 .clients-reviews-title{
-    color: var(--blue-font, #0A224A);
+    color: var(--sapphire-main-cl, #0A224A);
     font-family: Roboto;
     font-size: 28px;
     line-height: 1.5; /* 150% */
@@ -26,45 +26,48 @@ li{
 }
 .clients-reviews-list {
     min-width: 288px;
-    height: 230px;
+    min-height: 230px;
     margin: 0 auto;
     
 }
+
 .clients-reviews-item {
     padding: 24px 23px 24px 24px;
-    background: var(--white, #FFF);
+    background: var(--white-cl, #FFF);
     border-radius: 8px;
     
 }
 
-.clients-reviews-item.desktop{
+.clients-reviews-item:not(:first-child){
     display: none;
 }
-.reviews-name-date{
-}
+
 .clients-reviews-user{
     display: flex;
     gap: 14px;
     margin-bottom: 24px;
 }
+
 .clients-reviews-name {
-    color: var(--blue-font, #0A224A);
+    color: var(--sapphire-main-cl, #0A224A);
 font-family: Roboto;
 font-size: 18px;
 line-height: 1.78; /* 177.778% */
 text-transform: uppercase;
 margin-bottom: 2px;
 }
+
 .clients-reviews-date {
     display: flex;
-    color: var(--blue-font, #0A224A);
+    color: var(--sapphire-main-cl, #0A224A);
     text-align: center;
     font-family: Roboto;
     font-size: 14px;
     line-height: 1.29; /* 128.571% */
 }
+
 .clients-reviews-description {
-    color: var(--blue-font, #0A224A);
+    color: var(--sapphire-main-cl, #0A224A);
 font-family: Roboto;
 font-size: 14px;
 line-height: 1.43; /* 142.857% */
