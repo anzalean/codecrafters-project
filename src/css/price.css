@@ -10,34 +10,26 @@
 }
 
 .price-list {
-    /* display: flex; */
-    /* width: 100%; */
     max-width: 343px;
-    /* flex-direction: column; */
-    border: 1px solid var(--sapphire-main-cl);
+    border: 0.5px solid var(--sapphire-main-cl);
     border-left: none;
     border-right: none;
     margin: 0 auto;
 }
 
-.price-container-list {
-    border: 1px solid var(--sapphire-main-cl);
-    border-left: none;
-    border-right: none;
-    height: 102px;
-    text-align: center;
-}
+.price-container-list {}
 
 .price-list-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 42px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    height: 102px;
     width: 100%;
-}
 
+    border: 0.5px solid var(--sapphire-main-cl);
+    border-left: none;
+    border-right: none;
+}
 
 .price-mebles-text {
     color: var(--sapphire-main-cl);
