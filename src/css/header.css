@@ -2,8 +2,11 @@
   background-color: var(--lightblue-cl);
 }
 .header-container {
-  padding: 28px 16px;
   margin: 0 auto;
+  position: relative;
+}
+.header-menu {
+  padding: 16px 28px;
 }
 
 .header-menu {
@@ -28,6 +31,15 @@
   width: 32px;
   height: 32px;
 }
+.header-menu-close-button {
+  margin-left: auto;
+  padding: 0;
+  background: transparent;
+  border: none;
+  width: 32px;
+  height: 32px;
+  display: none;
+}
 .header-menu-icon {
   stroke: var(--sapphire-main-cl);
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -40,10 +52,37 @@
 .header-menu-list {
   display: none;
 }
+/**
+ |============================
+ | menu
+ |============================
+*/
+
+.is-hidden .header-menu-button {
+  display: none;
+}
+
+.is-hidden .header-menu-close-button {
+  display: inline;
+}
+.mobile-menu-container {
+  display: none;
+}
+.is-hidden .mobile-menu-container {
+  position: absolute;
+  top: 88px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-cl);
+}
 
 @media screen and (min-width: 375px) {
   .header-container {
     max-width: 375px;
+  }
+  .is-hidden .header-container {
+    min-width: 100%;
   }
 }
 
