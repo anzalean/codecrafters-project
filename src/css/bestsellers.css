@@ -4,7 +4,6 @@
   width: 100%;
   padding: 0 16px 64px 16px;
   margin: 0 auto;
-  /*border: 2px solid red;*/
 }
 .bestsellers-title {
   font-family: var(--primary-font);
@@ -21,10 +20,13 @@
 }
 .bestsellers-img {
   width: 100%;
+  height: 193px;
   margin-bottom: 14px;
+  object-fit: cover;
 }
 .bestsellers-img-1 {
   width: 100%;
+  height: 193px;
   margin-bottom: 14px;
 }
 .bestsellers-list-item-4:not(:nth-child(-n + 2)) {
@@ -82,6 +84,7 @@
     width: 336px;
     height: 193px;
     margin-bottom: 15px;
+    object-fit: cover;
   }
 
   .bestsellers-img-4 {
@@ -149,6 +152,7 @@
   .bestsellers-img {
     width: 258px;
     height: 193px;
+    object-fit: cover;
   }
   .bestsellers-img-4 {
     width: 258px;
