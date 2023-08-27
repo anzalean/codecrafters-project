@@ -1,7 +1,10 @@
+/*====== section ======*/
 .hero-section {
     margin: 20px auto;
     max-width: 375px;
   }
+  /*====== background-style ======*/
+
   .hero-container {
     background-image: url(../img/hero/hero-product-mob-1.jpg);
     background-repeat: no-repeat;
@@ -17,27 +20,32 @@
       background-image: url(../img/hero/hero-product-mob-1-2x.jpg);
     }
   }
-  
+  /*====== title =====*/
+
   .hero-title {
     text-transform: uppercase;
     width: 286px;
-    color: var(--blue-font, #0a224a);
-    font-family: Playfair Display;
+    color: var(--sapphire-main-cl, #0a224a);
+    font-family: var(--hero-title-font, 'Playfair Display', sans-serif);
     font-size: 28px;
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 14px;
   }
+  /*====== paragraph ======*/
+
   .hero-text {
     margin-bottom: 28px;
-    color: var(--blue-font, #0a224a);
-    font-family: Roboto;
+    color: var(--sapphire-main-cl, #0a224a);
+    font-family: var(--primary-font, 'Roboto', sans-serif);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
   }
+  /*====== batton ======*/
+
   .hero-btn {
-    background-color: #0a224a;
+    background-color: var(--sapphire-main-cl, #0a224a);
     border: none;
     width: 224px;
     padding: 12px 65px;
@@ -47,12 +55,26 @@
     font-weight: 400;
     line-height: 1.5;
   }
-  
+  .hero-btn:hover , .hero-btn:focus {
+    background-color: var(--hover-darkblue-cl, #061835);
+  }
+
+  /*====== adaptation 375 ======*/
+
+  @media screen and (min-width: 375px) {
+    .hero-section {
+      max-width: 375px;
+      padding: 0 32px;
+    }
+  }
+  /*====== adaptation 768 ======*/
+
   @media screen and (min-width: 768px) {
     .hero-section {
       max-width: 768px;
       padding: 0 32px;
     }
+    /*====== background-style ======*/
     .hero-container {
       margin: 0 auto;
       padding: 0;
@@ -71,10 +93,11 @@
         background-size: 308px 329px, 364px 531px;
       }
     }
-  
+  /*====== title =====*/
+
     .hero-title {
       margin-bottom: 410px;
-      color: var(--blue-font, #0a224a);
+      color: var(--sapphire-main-cl, #0a224a);
       font-size: 50px;
       font-style: normal;
       font-weight: 400;
@@ -82,17 +105,23 @@
       text-transform: uppercase;
       width: 100%;
     }
+    /*====== paragraph ======*/
+
     .hero-text {
       width: 312px;
       margin-bottom: 30px;
       font-size: 18px;
     }
   }
+  /*====== adaptation 1440 ======*/
+
   @media screen and (min-width: 1440px) {
     .hero-section {
       max-width: 1440px;
       padding: 0 60px;
     }
+    /*====== background-style ======*/
+
     .hero-container {
       background-image: url(../img/hero/hero-product-1.jpg),
         url(../img/hero/hero-product-2.jpg), url(../img/hero/hero-product-3.jpg);
@@ -109,10 +138,12 @@
         background-size: 310px 329px, 648px 530px, 312px 337px;
       }
     }
+    /*====== title =====*/
     .hero-title {
       margin-bottom: 246px;
       width: 648px;
     }
+    /*====== batton ======*/
     .hero-container-text-btn {
       width: 312px;
       margin: 0 0 0 auto;
