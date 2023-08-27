@@ -1,0 +1,131 @@
+.footer {
+    background-color: #0A224A;
+    padding: 36px 16px 16px 16px;
+}
+
+.footer-container {}
+
+.footer-container-logo {
+    margin-bottom: 42px;
+}
+
+.footer-logo-link {}
+
+.footer-logo-icon {
+    fill: var(--white-cl);
+}
+
+.footer-container-nav {
+    margin-bottom: 36px;
+    gap: 8px;
+    display: flex;
+}
+
+.footer-nav {}
+
+.footer-nav-list {
+    color: var(--white-cl);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    line-height: 1.5;
+    
+}
+
+.footer-nav-list-item {}
+
+.footer-nav-link {}
+
+.footer-container-social {
+    
+}
+
+.footer-social-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    /* display: inline-flex;
+    justify-content: center;
+    align-items: center; */
+    /* gap: 127px; */
+    /* display: flex;
+    gap: 16px; */
+}
+
+.footer-social-list-item {}
+
+.footer-icon-link {}
+
+.footer-link-icon {
+    fill: var(--white-cl);
+}
+
+.footer-social-link-item {}
+
+.footer-links-link {}
+
+.footer-address {
+    color: var(--white-cl);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.01em;
+}
+
+.footer-container-address {
+    gap: 8px;
+    margin-bottom: 35px;
+}
+
+.footer-address-list {
+    /* display: inline-grid; */
+    gap: 8px;
+}
+
+.footer-address-list-item {}
+
+.footer-address-list-link {}
+
+.footer-container-phone {
+    margin-bottom: 64px;
+}
+
+.footer-phone-list {
+    
+}
+
+.footer-phone-list-item {}
+
+.footer-phone-list-link {}
+
+.footer-container-mail {
+    display: none;
+}
+
+.footer-mail-list {
+
+}
+
+.footer-mail-list-item {}
+
+.footer-mail-list-link {}
+
+.footer-policy {
+    opacity: 0.6;
+    color: var(--white-cl);
+    font-family: var(--primary-font);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    /* font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.074em; */
+}
+
+.footer-container-policy {
+
+}
+
+.footer-terms-policy {
+    text-decoration-line: underline;
+}
