@@ -7,6 +7,7 @@
 .price-container {
     padding-left: 16px;
     padding-right: 16px;
+    margin: 0 auto;
 }
 
 .price-list {
@@ -38,7 +39,7 @@
     line-height: 1.5;
     text-transform: uppercase;
     position: relative;
-    transition: all 0.9s ease-in-out;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .price-mebles-text:hover {
@@ -102,6 +103,10 @@
         max-width: 704px;
     }
 
+    .price-list-item {
+        height: 105px;
+    }
+
     .price-mebles-text {
         font-size: 32px;
         line-height: 1.41;
@@ -109,7 +114,6 @@
 
     .price-mebles-dollars {
         font-size: 18px;
-        line-height: 1.5;
     }
 
 }
