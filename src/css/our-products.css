@@ -38,6 +38,7 @@ display: none;
 
 .our-products-img {
 width: 343px;
+object-fit: cover;
 margin-bottom: 16px;
 }
 
@@ -57,6 +58,7 @@ color: var(--sapphire-main-cl);
 
     .our-products-img {
         height: 300px;
+        object-fit: cover;
     }
 }
 
@@ -95,6 +97,7 @@ color: var(--sapphire-main-cl);
     .our-products-img {
         width: 344px;
         margin-bottom: 15px;
+        object-fit: cover;
     }
 
     .our-products-list-item-text {
@@ -126,5 +129,6 @@ color: var(--sapphire-main-cl);
 
             .our-products-img {
                 width: 312px;
+                object-fit: cover;
             }
 }
