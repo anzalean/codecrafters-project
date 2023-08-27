@@ -25,10 +25,10 @@
     align-items: center;
     height: 102px;
     width: 100%;
-
     border: 1px solid var(--sapphire-main-cl);
     border-left: none;
     border-right: none;
+    overflow: hidden;
 }
 
 .price-mebles-text {
