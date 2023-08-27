@@ -1,12 +1,15 @@
 .header-section {
   background-color: var(--lightblue-cl);
+  margin-bottom: 64px;
 }
 .header-container {
   margin: 0 auto;
   position: relative;
+  padding: 28px 16px;
 }
+
 .header-menu {
-  padding: 16px 28px;
+  width: calc(100%);
 }
 
 .header-menu {
@@ -52,31 +55,6 @@
 .header-menu-list {
   display: none;
 }
-/**
- |============================
- | menu
- |============================
-*/
-
-.is-hidden .header-menu-button {
-  display: none;
-}
-
-.is-hidden .header-menu-close-button {
-  display: inline;
-}
-.mobile-menu-container {
-  display: none;
-}
-.is-hidden .mobile-menu-container {
-  position: absolute;
-  top: 88px;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: var(--white-cl);
-}
-
 @media screen and (min-width: 375px) {
   .header-container {
     max-width: 375px;
@@ -126,5 +104,86 @@
   .header-menu-list a:hover,
   .header-menu-list a:focus {
     color: var(--hover-darkblue-cl);
+  }
+}
+
+/**
+ |============================
+ | menu
+ |============================
+*/
+.is-hidden .header-container {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.is-hidden .header-menu {
+  position: fixed;
+  z-index: 1;
+  width: 343px;
+}
+.is-hidden .header-menu-button {
+  display: none;
+}
+
+.is-hidden .header-menu-close-button {
+  display: inline;
+  margin-left: auto;
+}
+.mobile-menu-container {
+  display: none;
+}
+.is-hidden + .mobile-menu-container {
+  position: fixed;
+  top: 0;
+  padding-top: 88px;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white-cl);
+}
+.mobile-nav-list {
+  margin-top: 114px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  color: var(--sapphire-main-cl);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  line-height: 1.5em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-nav-list a:hover,
+.mobile-nav-list a:focus {
+  color: var(--hover-darkblue-cl);
+}
+@media screen and (min-width: 768px) {
+  .is-hidden + .mobile-menu-container {
+    padding-top: 95px;
+  }
+  .is-hidden .header-menu {
+    width: 704px;
+  }
+  .is-hidden .header-menu-close-button {
+    width: 40px;
+    height: 40px;
+  }
+  .is-hidden .header-menu-close-button {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* .is-hidden + .mobile-menu-container {
+    display: none;
+  }
+  .is-hidden .header-menu-close-button {
+    display: none;
+  } */
+  .is-hidden .header-menu {
+    width: 1320px;
   }
 }
