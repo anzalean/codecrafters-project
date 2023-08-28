@@ -1,4 +1,4 @@
-img {
+/* img {
   display: block;
   max-width: 100%;
 }
@@ -18,7 +18,7 @@ p {
 
 h2 {
   margin: 0;
-}
+} */
 
 .about-us-section {
   /* Positioning */
@@ -242,19 +242,21 @@ h2 {
   }
 
   .about-us-container {
-    max-width: 768px;
+    max-width: 704px;
   }
 
   .about-us-slogan {
     font-size: 32px;
     font-weight: 400;
     line-height: 45px;
+    max-width: 576px;
   }
 
   .about-us-descrition {
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
+    max-width: 576px;
   }
 
   .about-us-wrapper {
@@ -279,6 +281,7 @@ h2 {
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
+    max-width: 170px;
   }
 
   .about-us-img-wrapper {
@@ -301,7 +304,7 @@ h2 {
   }
 
   .about-us-container {
-    max-width: 1440px;
+    max-width: 1320px;
     display: flex;
     gap: 24px;
     align-items: center;
