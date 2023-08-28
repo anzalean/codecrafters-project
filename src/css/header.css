@@ -128,6 +128,9 @@
  | menu
  |============================
 */
+.no-scroll {
+  overflow: hidden;
+}
 .is-hidden + .mobile-menu-container + .mobile-div {
   display: block;
   height: 88px;

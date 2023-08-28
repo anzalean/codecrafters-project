@@ -1,14 +1,26 @@
 (() => {
   const refs = {
-    openMenuBtn: document.querySelector('[data-menu-open]'),
-    closeMenuBtn: document.querySelector('[data-menu-close]'),
-    menu: document.querySelector('[data-menu]'),
+    openModalBtn: document.querySelectorAll('[data-menu-open]'),
+    closeModalBtn: document.querySelector('[data-menu-close]'),
+    modal: document.querySelector('[data-menu]'),
   };
 
-  refs.openMenuBtn.addEventListener('click', toggleMenu);
-  refs.closeMenuBtn.addEventListener('click', toggleMenu);
+  refs.openModalBtn.forEach(element => {
+    element.addEventListener('click', toggleModal);
+  });
+  refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  function toggleMenu() {
-    refs.menu.classList.toggle('is-hidden');
+  //* Закривання по кліку на бекдроп
+
+  refs.modal.addEventListener('click', removeModal);
+  function removeModal(e) {
+    if (e.target === e.currentTarget) {
+      refs.modal.classList.add('is-hidden');
+    }
+  }
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('no-scroll');
   }
 })();
