@@ -99,6 +99,8 @@
   .clients-reviews-description {
     font-size: 18px;
     line-height: 1.5;
+    min-height: 192px;
+    min-width: 296px;
   }
 
   .clients-reviews-user {
@@ -140,7 +142,10 @@
   .clients-reviews-user {
     margin-bottom: 16px;
   }
-  
+  .clients-reviews-description{
+  min-height: 161px;
+  min-width: 360px;
+  }
   .clients-reviews-list {
     display: flex;
     max-width: 1320px;
