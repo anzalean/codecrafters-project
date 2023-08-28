@@ -238,8 +238,6 @@ h2 {
 @media screen and (min-width: 768px) {
   .about-us-section {
     margin-top: 100px;
-    margin-left: 32px;
-    margin-right: 32px;
   }
 
   .about-us-container {
@@ -296,13 +294,12 @@ h2 {
       height: 100%;
     } */
 }
+
 /* desktop 1440px */
 
 @media screen and (min-width: 1440px) {
   .about-us-section {
     margin-top: 100px;
-    margin-left: 60px;
-    margin-right: 60px;
   }
 
   .about-us-container {
