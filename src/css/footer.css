@@ -1,7 +1,13 @@
 .footer {
     font-family: var(--primary-font);
-    max-width: 375px;
+    /* max-width: 375px; */
     background-color: var(--sapphire-main-cl);
+    /* margin: 0 auto;
+    padding: 36px 16px 16px; */
+}
+
+.footer-container-background {
+    max-width: 375px;
     margin: 0 auto;
     padding: 36px 16px 16px;
 }
@@ -110,7 +116,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .footer {
+    .footer-container-background {
         max-width: 768px;
         padding: 36px 32px;
     }
@@ -184,7 +190,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .footer {
+    .footer-container-background {
         max-width: 1440px;
         padding: 36px 60px;
     }
