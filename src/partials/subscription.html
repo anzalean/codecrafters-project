@@ -1,87 +1,89 @@
 <section class="subscription-section" id="subscription">
-  <div class="subscription-right-container">
-    <h2 class="subscription-title">Newsletter</h2>
-    <p class="subscription-description">
-      Every week we will send you new designs and information about sales.
-    </p>
-    <form class="subscription-form">
-      <input
-        type="text"
-        name="user-name"
-        id="user-name"
-        minlength="2"
-        maxlength="16"
-        placeholder="Name"
-        class="subscription-input-name"
-        required
-      />
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="E-mail"
-        class="subscription-input-email"
-        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-        required
-      />
-      <!-- <div class="subscription-container-checkbox"> -->
-      <div class="subscription-checkbox-text">
+  <div class="subscription-container">
+    <div class="subscription-right-container">
+      <h2 class="subscription-title">Newsletter</h2>
+      <p class="subscription-description">
+        Every week we will send you new designs and information about sales.
+      </p>
+      <form class="subscription-form">
         <input
-          class="subscription-checkbox visually-hidden"
-          type="checkbox"
-          name="checkbox"
-          id="checkbox"
+          class="subscription-input-name"
+          type="text"
+          name="user-name"
+          id="user-name"
+          minlength="2"
+          maxlength="16"
+          placeholder="Name"
           required
         />
-        <label for="checkbox" class="subscribe-label-check">
-          <span class="checkbox-border">
-            <svg class="check-icon" width="13" height="13">
-              <use href="./images/icons.svg#icon-check"></use>
-            </svg>
-          </span>
-          Agree to subscribe to the newsletter
-        </label>
-      </div>
-      <button type="submit" class="subscription-button">Send</button>
-    </form>
-  </div>
-
-  <div class="subscription-left-container">
-    <div class="subscription-container-image">
-      <picture>
-        <source
-          srcset="
-            ./img/subscription/subscription-image-deskt.jpg   1x,
-            ./img/subscription/subscription-image-deskt2x.jpg 2x
-          "
-          media="(min-width:1440px)"
-          type="image/jpg"
+        <input
+          class="subscription-input-email"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="E-mail"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}|^$"
+          required
         />
-        <source
-          srcset="
-            ./img/subscription/subscription-image-tab.jpg   1x,
-            ./img/subscription/subscription-image-tab2x.jpg 2x
-          "
-          media="(min-width:768px)"
-          type="image/jpg"
-        />
-        <source
-          srcset="
-            ./img/subscription/subscription-image-mob.jpg   1x,
-            ./img/subscription/subscription-image-mob2x.jpg 2x
-          "
-          media="(min-width:320px)"
-          type="image/jpg"
-        />
-
-        <img
-          class="subscription-image"
-          src="./img/subscription/subscription-image-mob.jpg"
-          alt="image"
-          width="704px"
-        />
-      </picture>
+        <!-- <div class="subscription-container-checkbox"> -->
+        <div class="subscription-checkbox-text">
+          <input
+            class="subscription-checkbox visually-hidden"
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+            required
+          />
+          <label for="checkbox" class="subscribe-label-check">
+            <span class="checkbox-border">
+              <svg class="check-icon" width="13" height="13">
+                <use href="./img/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            Agree to subscribe to the newsletter
+          </label>
+        </div>
+        <button type="submit" class="subscription-button">Send</button>
+      </form>
     </div>
+
+    <div class="subscription-left-container">
+      <div class="subscription-container-image">
+        <picture>
+          <source
+            srcset="
+              ./img/subscription/subscription-image-deskt.jpg   1x,
+              ./img/subscription/subscription-image-deskt2x.jpg 2x
+            "
+            media="(min-width:1440px)"
+            type="image/jpg"
+          />
+          <source
+            srcset="
+              ./img/subscription/subscription-image-tab.jpg   1x,
+              ./img/subscription/subscription-image-tab2x.jpg 2x
+            "
+            media="(min-width:768px)"
+            type="image/jpg"
+          />
+          <source
+            srcset="
+              ./img/subscription/subscription-image-mob.jpg   1x,
+              ./img/subscription/subscription-image-mob2x.jpg 2x
+            "
+            media="(min-width:320px)"
+            type="image/jpg"
+          />
+
+          <img
+            class="subscription-image"
+            src="./img/subscription/subscription-image-mob.jpg"
+            alt="image"
+            width="704px"
+          />
+        </picture>
+      </div>
+    </div>
+    <!-- </div> -->
   </div>
-  <!-- </div> -->
 </section>

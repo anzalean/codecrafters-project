@@ -1,3 +1,12 @@
+/*-----------320px---------*/
+
+.subscription-container {
+  width: 100%;
+  padding: 64px 16px 100px 16px;
+  margin: 0 auto;
+}
+
+/*
 .subscription-section {
   display: flex;
   flex-direction: column;
@@ -5,15 +14,13 @@
   font-family: var(--primary-font);
   align-items: center;
 }
-
+*/
 .subscription-title {
   color: var(--sapphire-main-cl);
   font-size: 28px;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   text-transform: uppercase;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -21,16 +28,19 @@
 .subscription-description {
   color: var(--sapphire-main-cl);
   font-size: 16px;
-  line-height: 1.5; /* 150% */
-  max-width: 343px;
-  max-height: 48px;
+  line-height: 1.5;
+  width: 343px;
+  height: 48px;
   margin-bottom: 30px;
 }
+/*
 .subscription-form {
   display: flex;
   flex-direction: column;
   align-items: baseline;
 }
+*/
+
 .subscription-input-name {
   max-width: 343px;
   width: 100%;
@@ -43,10 +53,10 @@
   margin-bottom: 20px;
   color: var(--blue-font, #0a224a);
   font-size: 18px;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
 }
 
-.check-icon{
+.check-icon {
   stroke: var(--white-cl);
 }
 
@@ -59,7 +69,7 @@
 .subscription-input-name::placeholder {
   color: var(--lightgrey-cl);
   font-size: 16px;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
 }
 
 /* .subscription-input-name:invalid {
@@ -92,28 +102,34 @@
 .subscription-input-email::placeholder {
   color: var(--lightgrey-cl);
   font-size: 16px;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
 }
 
-/* .subscription-input-email:invalid {
+/*
+.subscription-input-email:invalid {
   color: var(--cinnabar-cl);
   border-color: var(--cinnabar-cl);
-} */
+}
 
+.subscription-input-email:valid {
+  color: var(--blue-font);
+  border: 1px solid var(--darkgrey-cl);
+}
+*/
+/*
 .subscription-container-checkbox {
   display: flex;
   flex-direction: column;
 }
-
+*/
 .subscription-checkbox-text {
-  display: flex;
   margin-bottom: 30px;
 }
 
 .subscription-button {
   color: var(--white-cl);
   font-size: 16px;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   display: flex;
   width: 224px;
   height: 50px;
@@ -136,7 +152,7 @@
 .subscribe-label-check {
   color: var(--grey-cl);
   font-size: 16px;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 
 .checkbox-border {
@@ -151,7 +167,7 @@
   justify-content: center;
   fill: var(--white-cl);
   cursor: pointer;
-margin-right: 8px;
+  margin-right: 8px;
 }
 
 .check-icon {
@@ -173,24 +189,43 @@ margin-right: 8px;
     object-fit:none;
   } */
 
+/*-----------375px---------*/
+@media screen and (min-width: 375px) {
+  .subscription-container {
+    max-width: 375px;
+  }
+}
+
+/*-----------TABLET 768px---------*/
 @media screen and (min-width: 768px) {
-  .subscription-section {
+  .subscription-container {
+    max-width: 768px;
     padding: 100px 32px;
     align-items: flex-start;
   }
 
+  .subscription-form {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
   .subscription-title {
     font-size: 32px;
-    line-height: 1.41; /* 150% */
+    line-height: 1.41;
+    text-align: start;
     margin-bottom: 30px;
-    justify-content: flex-start;
   }
 
   .subscription-description {
+    color: var(--sapphire-main-cl);
     font-size: 18px;
-    max-width: 536px;
-    max-height: 54px;
-    margin-bottom: 20px;
+    line-height: 1.5;
+    font-style: normal;
+    font-weight: 400;
+    width: 536px;
+    height: 54px;
+    margin-bottom: 30px;
   }
 
   .subscription-input-name {
@@ -203,7 +238,7 @@ margin-right: 8px;
   }
 
   .subscription-form {
-    align-items: baseline;    
+    align-items: baseline;
   }
   .subscription-container-checkbox {
     /* min-width: 536px; */
@@ -212,7 +247,6 @@ margin-right: 8px;
   .subscription-button {
     margin-bottom: 64px;
   }
-
   .subscription-container-image {
     max-width: 704px;
     max-height: 396px;
@@ -223,19 +257,31 @@ margin-right: 8px;
   }
 }
 
+/*-----------DESKTOP 1440px---------*/
 @media screen and (min-width: 1440px) {
-
-  .subscription-section {
+  .subscription-container {
+    max-width: 1440px;
+    padding: 100px 0 64px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  /*
+  subscription-section {
     display: flex;
     padding: 100px 172px;
     flex-direction: row;
-}
+  }*/
 
-.subscription-container-image {
-  max-width: 460px;
-  max-height: 410px;
-}
-.subscription-right-container{
-  margin-right: 100px;
-}
+  .subscription-container-image {
+    max-width: 460px;
+    max-height: 410px;
+  }
+
+  /*
+  .subscription-right-container {
+    margin-right: 100px;
+  }*/
 }
