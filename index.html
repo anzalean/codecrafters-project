@@ -16,8 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/codecrafters-project/assets/index-3f9e7b98.js"></script>
-    <link rel="stylesheet" href="/codecrafters-project/assets/index-2003cc14.css">
+    <script type="module" crossorigin src="/codecrafters-project/assets/index-03dc8aad.js"></script>
+    <link rel="stylesheet" href="/codecrafters-project/assets/index-36c369a7.css">
   </head>
   <body>
     <header class="header-section">
@@ -26,17 +26,17 @@
       <nav class="header-menu">
         <a class="header-logo-link" href="./index.html">
           <svg class="header-logo-icon" width="100" height="16">
-            <use href="/codecrafters-project/assets/icons-e9ab2676.svg#icon-logo"></use>
+            <use href="/codecrafters-project/assets/icons-3fa468ec.svg#icon-logo"></use>
           </svg>
         </a>
         <button class="header-menu-button" type="button" data-menu-open>
           <svg class="header-menu-icon" width="32" height="32">
-            <use href="/codecrafters-project/assets/icons-e9ab2676.svg#icon-hamburger"></use>
+            <use href="/codecrafters-project/assets/icons-3fa468ec.svg#icon-hamburger"></use>
           </svg>
         </button>
         <button class="header-menu-close-button" type="button" data-menu-close>
           <svg class="header-menu-icon" width="32" height="32">
-            <use href="/codecrafters-project/assets/icons-e9ab2676.svg#icon-x"></use>
+            <use href="/codecrafters-project/assets/icons-3fa468ec.svg#icon-x"></use>
           </svg>
         </button>
         <ul class="header-menu-list">
@@ -404,44 +404,84 @@
 </section>
 
     <section class="subscription-section" id="subscription">
-  <h2 class="subscription-title">Newsletter</h2>
-  <p class="subscription-description">
-    Every week we will send you new designs and information about sales.
-  </p>
-  <form class="subscription-form">
-    <input
-      type="text"
-      name="user-name"
-      id="user-name"
-      placeholder="Name"
-      class="subscription-input-name"
-      required
-    />
-    <input
-      type="email"
-      name="email"
-      id="email"
-      placeholder="E-mail"
-      class="subscription-input-email"
-      required
-    />
-    <div class="subscription-container-checkbox">
-      <input
-        type="checkbox"
-        name="checkbox"
-        id="checkbox"
-        class="subscription-checkbox"
-        required
-      />
-      <p class="subscription-checkbox-description">
-        Agree to subscribe to the newsletter
+  <div class="subscription-container">
+    <div class="subscription-right-container">
+      <h2 class="subscription-title">Newsletter</h2>
+      <p class="subscription-description">
+        Every week we will send you new designs and information about sales.
       </p>
-      <button type="button" class="subscription-button">Send</button>
+      <form class="subscription-form">
+        <input
+          class="subscription-input-name"
+          type="text"
+          name="user-name"
+          id="user-name"
+          minlength="2"
+          maxlength="16"
+          placeholder="Name"
+          required
+        />
+        <input
+          class="subscription-input-email"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="E-mail"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}|^$"
+          required
+        />
+        <!-- <div class="subscription-container-checkbox"> -->
+        <div class="subscription-checkbox-text">
+          <input
+            class="subscription-checkbox visually-hidden"
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+            required
+          />
+          <label for="checkbox" class="subscribe-label-check">
+            <span class="checkbox-border">
+              <svg class="check-icon" width="13" height="13">
+                <use href="/codecrafters-project/assets/icons-3fa468ec.svg#icon-check"></use>
+              </svg>
+            </span>
+            Agree to subscribe to the newsletter
+          </label>
+        </div>
+        <button type="submit" class="subscription-button">Send</button>
+      </form>
+    </div>
+
+    <div class="subscription-left-container">
       <div class="subscription-container-image">
-        <img src="../img/subscription/subscription-image.jpg" alt="image" />
+        <picture>
+          <source
+            srcset="/codecrafters-project/assets/subscription-image-deskt-2dc2e3f3.jpg 1x, /codecrafters-project/assets/subscription-image-deskt2x-3c4a454a.jpg 2x"
+            media="(min-width:1440px)"
+            type="image/jpg"
+          />
+          <source
+            srcset="/codecrafters-project/assets/subscription-image-tab-850e7d19.jpg 1x, /codecrafters-project/assets/subscription-image-tab2x-a42c72f7.jpg 2x"
+            media="(min-width:768px)"
+            type="image/jpg"
+          />
+          <source
+            srcset="/codecrafters-project/assets/subscription-image-mob-52ea113a.jpg 1x, /codecrafters-project/assets/subscription-image-mob2x-9289736d.jpg 2x"
+            media="(min-width:320px)"
+            type="image/jpg"
+          />
+
+          <img
+            class="subscription-image"
+            src="/codecrafters-project/assets/subscription-image-mob-52ea113a.jpg"
+            alt="image"
+            width="704px"
+          />
+        </picture>
       </div>
     </div>
-  </form>
+    <!-- </div> -->
+  </div>
 </section>
 
     <footer class="footer" id="footer">
@@ -449,7 +489,7 @@
         <div class="footer-container-main">
             <div class="container-footer">
                 <a class="footer-logo link" href="./index.html"><svg class="footer-logo-svg" width="100" height="14">
-                        <use class="footer-svg-logo" href="/codecrafters-project/assets/icons-e9ab2676.svg#icon-logofooter"></use>
+                        <use class="footer-svg-logo" href="/codecrafters-project/assets/icons-3fa468ec.svg#icon-logofooter"></use>
                     </svg>
                 </a>
                 <ul class="footer-menu-list list">
@@ -496,19 +536,19 @@
             <ul class="footer-social-list list">
                 <li class="footer-social-item">
                     <a class="footer-link-social link" href="https://www.facebook.com/" target="_blank"><svg class="footer-social-svg" width="28" height="28">
-                            <use class="sociale-svg-footer" href="/codecrafters-project/assets/icons-e9ab2676.svg#icon-facebook-logo"></use>
+                            <use class="sociale-svg-footer" href="/codecrafters-project/assets/icons-3fa468ec.svg#icon-facebook-logo"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="footer-social-item">
                     <a class="footer-link-social link" href="https://www.instagram.com/" target="_blank"><svg class="footer-social-svg" width="28" height="28">
-                            <use class="sociale-svg-footer" href="/codecrafters-project/assets/icons-e9ab2676.svg#icon-instagram-logo"></use>
+                            <use class="sociale-svg-footer" href="/codecrafters-project/assets/icons-3fa468ec.svg#icon-instagram-logo"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="footer-social-item">
                     <a class="footer-link-social link" href="https://www.youtube.com/" target="_blank"><svg class="footer-social-svg" width="28" height="28">
-                            <use class="sociale-svg-footer" href="/codecrafters-project/assets/icons-e9ab2676.svg#icon-youtube-logo"></use>
+                            <use class="sociale-svg-footer" href="/codecrafters-project/assets/icons-3fa468ec.svg#icon-youtube-logo"></use>
                         </svg>
                     </a>
                 </li>
