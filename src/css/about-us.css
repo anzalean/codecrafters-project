@@ -1,335 +1,333 @@
 img {
-    display: block;
-    max-width: 100%;
-  }
-  
-  ul {
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    margin: 0;
-  }
-  
-  p {
-    margin: 0;
-  }
-  
-  h2 {
-    margin: 0;
-  }
-  
-  .about-us-section {
-    /* Positioning */
-  
-    /* Box model */
-  
-    /* Typography */
-  
-    /* Visual */
-  
-    /* Misc */
-  }
-  
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+.about-us-section {
+  /* Positioning */
+
+  /* Box model */
+
+  /* Typography */
+
+  /* Visual */
+
+  /* Misc */
+}
+
+.about-us-container {
+  width: 100%;
+  /* max-width: 375px; */
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.about-us-wrapper {
+  /* Positioning */
+  padding: 64px 16px;
+  /* Box model */
+
+  /* Typography */
+
+  /* Visual */
+  background: #f7faff;
+  /* Misc */
+}
+
+.about-us-statisctic-list-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us-titel {
+  /* Positioning */
+  margin-bottom: 30px;
+  left: 50px;
+  /* Box model */
+  width: 100px;
+  /* Typography */
+  font-family: 'Roboto', sans-serif;
+  color: #0a224a;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+
+  /* Visual */
+
+  /* Misc */
+}
+
+.special {
+  color: #0a224a;
+  position: relative;
+}
+
+.special::before {
+  content: '';
+  left: -50px;
+  bottom: 10px;
+  width: 30px;
+  height: 1px;
+  background-color: #0a224a;
+  position: absolute;
+}
+
+.about-us-slogan {
+  /* Positioning */
+  margin-bottom: 30px;
+  /* Box model */
+
+  /* Typography */
+  color: #0a224a;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  /* Visual */
+
+  /* Misc */
+}
+
+.about-us-descrition {
+  /* Positioning */
+  margin-bottom: 30px;
+  /* Box model */
+
+  /* Typography */
+  color: #0a224a;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  /* Visual */
+
+  /* Misc */
+}
+
+.about-us-statistic-list {
+  /* Positioning */
+
+  /* Box model */
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 170px;
+  /* Typography */
+
+  /* Visual */
+  list-style: none;
+  /* Misc */
+}
+
+.about-us-list-item-span {
+  /* Positioning */
+
+  /* Box model */
+
+  /* Typography */
+  color: #0a224a;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 65px;
+  text-transform: uppercase;
+
+  /* Visual */
+
+  /* Misc */
+}
+
+.about-us-list-item-text {
+  /* Positioning */
+
+  /* Box model */
+
+  /* Typography */
+  color: #0a224a;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+
+  /* Visual */
+
+  /* Misc */
+}
+
+.about-us-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.about-us-img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* .about-us-img {
+    object-fit: cover;
+  } */
+
+/* Media  */
+
+/* mob 375px */
+@media screen and (min-width: 375px) {
   .about-us-container {
-    width: 100%;
-    /* max-width: 375px; */
-    max-width: 320px;
-    margin: 0 auto;
+    max-width: 375px;
   }
-  
-  .about-us-wrapper {
-    /* Positioning */
-    padding: 64px 16px;
-    /* Box model */
-  
-    /* Typography */
-  
-    /* Visual */
-    background: #f7faff;
-    /* Misc */
-  }
-  
-  .about-us-statisctic-list-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+
   .about-us-titel {
-    /* Positioning */
-    margin-bottom: 30px;
-    left: 50px;
-    /* Box model */
-    width: 100px;
-    /* Typography */
-    font-family: "Roboto", sans-serif;
-    color: #0a224a;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 20px;
-  
-    /* Visual */
-  
-    /* Misc */
-  }
-  
-  .special {
-    color: #0a224a;
-    position: relative;
-  }
-  
-  .special::before {
-    content: "";
-    left: -50px;
-    bottom: 10px;
-    width: 30px;
-    height: 1px;
-    background-color: #0a224a;
-    position: absolute;
-  }
-  
-  .about-us-slogan {
-    /* Positioning */
-    margin-bottom: 30px;
-    /* Box model */
-  
-    /* Typography */
-    color: #0a224a;
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-    text-transform: uppercase;
-  
-    /* Visual */
-  
-    /* Misc */
-  }
-  
-  .about-us-descrition {
-    /* Positioning */
-    margin-bottom: 30px;
-    /* Box model */
-  
-    /* Typography */
-    color: #0a224a;
-    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-  
-    /* Visual */
-  
-    /* Misc */
   }
-  
-  .about-us-statistic-list {
-    /* Positioning */
-  
-    /* Box model */
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    width: 170px;
-    /* Typography */
-  
-    /* Visual */
-    list-style: none;
-    /* Misc */
+
+  .about-us-slogan {
+    font-size: 28px;
+    line-height: 42px;
   }
-  
+
+  .about-us-descrition {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .about-us-list-item-span {
-    /* Positioning */
-  
-    /* Box model */
-  
-    /* Typography */
-    color: #0a224a;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 400;
-    line-height: 65px;
-    text-transform: uppercase;
-  
-    /* Visual */
-  
-    /* Misc */
+    line-height: 75px;
   }
-  
+
   .about-us-list-item-text {
-    /* Positioning */
-  
-    /* Box model */
-  
-    /* Typography */
-    color: #0a224a;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-  
-    /* Visual */
-  
-    /* Misc */
+    font-size: 16px;
+    line-height: 24px;
   }
-  
-  .about-us-list-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 14px;
-  }
-  
-  .about-us-img-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-  
+
   /* .about-us-img {
-    object-fit: cover;
-  } */
-  
-  /* Media  */
-  
-  /* mob 375px */
-  @media screen and (min-width: 375px) {
-    .about-us-container {
-      max-width: 375px;
-    }
-  
-    .about-us-titel {
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-    }
-  
-    .about-us-slogan {
-      font-size: 28px;
-      line-height: 42px;
-    }
-  
-    .about-us-descrition {
-  font-size: 16px;
-  line-height: 24px;
-    }
-  
-    .about-us-list-item-span {
-  font-size: 50px;
-  font-weight: 400;
-  line-height: 75px; 
-    }
-  
-    .about-us-list-item-text {
-  font-size: 16px;
-  line-height: 24px;
-    }
-  
-    /* .about-us-img {
       width: 767px;
       height: 400px;
     } */
+}
+
+/* tablet 768px */
+
+@media screen and (min-width: 768px) {
+  .about-us-section {
+    margin-left: 32px;
+    margin-right: 32px;
   }
-  
-  /* tablet 768px */
-  
-  @media screen and (min-width: 768px) {
-  
-    .about-us-section {
-      margin-left: 32px;
-      margin-right: 32px;
-    }
-  
-    .about-us-container {
-      max-width: 768px;
-    }
-  
-    .about-us-slogan {
-      font-size: 32px;
-      font-weight: 400;
-      line-height: 45px;
-    }
-  
-    .about-us-descrition {
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 27px;
-    }
-  
-    .about-us-wrapper {
-      padding: 36px 64px;
-    }
-  
-    .about-us-statistic-list {
-      display: flex;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-      flex-wrap: inherit;
-      gap: 33px;
-    }
-  
-    .about-us-statisctic-list-wrapper {
-    }
-  
-    .about-us-list-item-text {
-      text-align: center;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 27px;
-    }
-  
-    .about-us-img-wrapper {
-      width: auto;
-      height: auto;
-      margin-top: 30px;
-    }
-  
-    /* .about-us-img {
+
+  .about-us-container {
+    max-width: 768px;
+  }
+
+  .about-us-slogan {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 45px;
+  }
+
+  .about-us-descrition {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+
+  .about-us-wrapper {
+    padding: 36px 64px;
+  }
+
+  .about-us-statistic-list {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: inherit;
+    gap: 33px;
+  }
+
+  .about-us-statisctic-list-wrapper {
+  }
+
+  .about-us-list-item-text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+
+  .about-us-img-wrapper {
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  /* .about-us-img {
       width: 100%;
       height: 100%;
     } */
+}
+/* desktop 1440px */
+
+@media screen and (min-width: 1440px) {
+  .about-us-section {
+    margin-left: 60px;
+    margin-right: 60px;
   }
-  /* desktop 1440px */
-  
-  @media screen and (min-width: 1440px) {
-  
-    .about-us-section {
-      margin-left: 60px;
-      margin-right: 60px;
-    }
-  
-    .about-us-container {
-      max-width: 1440px;
-      display: flex;
-      gap: 24px;
-    }
-  
-    .about-us-wrapper {
-      padding: 34px 69px;
-    }
-  
-    .about-us-img-wrapper {
-      margin-top: 0;
-      width: 1140px;
-    }
-  
-    .about-us-statistic-list {
-      gap: 56px;
-    }
-  
-    .about-us-list-item-text {
-      width: 170px;
-    }
-  
-    /* .about-us-img {
+
+  .about-us-container {
+    max-width: 1440px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .about-us-wrapper {
+    padding: 34px 69px;
+    width: 760px;
+    height: 500px;
+  }
+
+  .about-us-img-wrapper {
+    margin-top: 0;
+    width: 1140px;
+  }
+
+  .about-us-statistic-list {
+    gap: 56px;
+  }
+
+  .about-us-list-item-text {
+    width: 170px;
+  }
+
+  /* .about-us-img {
       width: 536px;
       height: 540px;
     } */
-  
-  }
-  
- 
+}
