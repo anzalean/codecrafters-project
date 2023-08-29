@@ -184,7 +184,9 @@
   max-width: 343px;
   max-height: 300px;
 }
-
+.subscribe-label-check {
+  line-height: 1.5em;
+}
 /* .subscription-image img {
     object-fit:none;
   } */
@@ -221,8 +223,6 @@
     color: var(--sapphire-main-cl);
     font-size: 18px;
     line-height: 1.5;
-    font-style: normal;
-    font-weight: 400;
     width: 536px;
     height: 54px;
     margin-bottom: 30px;
@@ -245,6 +245,8 @@
   }
 
   .subscription-button {
+    font-size: 18px;
+    line-height: 1.33em;
     margin-bottom: 64px;
   }
   .subscription-container-image {
@@ -254,6 +256,9 @@
 
   .subscription-image img {
     object-fit: cover;
+  }
+  .subscribe-label-check {
+    font-size: 18px;
   }
 }
 
