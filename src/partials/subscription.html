@@ -6,26 +6,35 @@
         Every week we will send you new designs and information about sales.
       </p>
       <form class="subscription-form">
-        <input
-          class="subscription-input-name"
-          type="text"
-          name="user-name"
-          id="user-name"
-          minlength="2"
-          maxlength="16"
-          placeholder="Name"
-          required
-        />
-        <input
-          class="subscription-input-email"
-          type="email"
-          name="email"
-          id="email"
-          placeholder="E-mail"
-          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}|^$"
-          required
-        />
-        <!-- <div class="subscription-container-checkbox"> -->
+        <div class="input-wrapper">
+          <input
+            class="subscription-input-name"
+            type="text"
+            name="user-name"
+            id="user-name"
+            minlength="2"
+            maxlength="16"
+            placeholder="Name"
+            required
+          />
+          <svg width="24" height="24" class="error-icon error-icon-name">
+            <use href="./img/icons.svg#icon-error-outline"></use>
+          </svg>
+        </div>
+        <div class="input-wrapper">
+          <input
+            class="subscription-input-email"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            required
+          />
+          <svg width="24" height="24" class="error-icon error-icon-name">
+            <use href="./img/icons.svg#icon-error-outline"></use>
+          </svg>
+        </div>
         <div class="subscription-checkbox-text">
           <input
             class="subscription-checkbox visually-hidden"
@@ -79,11 +88,10 @@
             class="subscription-image"
             src="./img/subscription/subscription-image-mob.jpg"
             alt="image"
-            width="704px"
+            width="704"
           />
         </picture>
       </div>
     </div>
-    <!-- </div> -->
   </div>
 </section>
