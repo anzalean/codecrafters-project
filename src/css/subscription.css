@@ -6,15 +6,6 @@
   margin: 0 auto;
 }
 
-/*
-.subscription-section {
-  display: flex;
-  flex-direction: column;
-  padding: 64px 16px;
-  font-family: var(--primary-font);
-  align-items: center;
-}
-*/
 .subscription-title {
   color: var(--sapphire-main-cl);
   font-size: 28px;
@@ -29,17 +20,10 @@
   color: var(--sapphire-main-cl);
   font-size: 16px;
   line-height: 1.5;
-  width: 343px;
+  max-width: 100%;
   height: 48px;
   margin-bottom: 30px;
 }
-/*
-.subscription-form {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-}
-*/
 
 .subscription-input-name {
   max-width: 343px;
@@ -72,10 +56,28 @@
   line-height: 1.5;
 }
 
-/* .subscription-input-name:invalid {
-  color: var(--cinnabar-cl);
-  border-color: var(--cinnabar-cl);
-} */
+input:invalid:not(:placeholder-shown) {
+  border: 2px solid red;
+  outline: transparent;
+  color: red;
+}
+.error-icon {
+  fill: transparent;
+}
+input:invalid:not(:placeholder-shown) + .error-icon {
+  fill: red;
+}
+.input-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.error-icon {
+  position: absolute;
+  top: 35%;
+  right: 20px;
+  transform: translateY(-50%);
+}
 
 .subscription-input-email {
   max-width: 343px;
@@ -105,23 +107,6 @@
   line-height: 1.5;
 }
 
-/*
-.subscription-input-email:invalid {
-  color: var(--cinnabar-cl);
-  border-color: var(--cinnabar-cl);
-}
-
-.subscription-input-email:valid {
-  color: var(--blue-font);
-  border: 1px solid var(--darkgrey-cl);
-}
-*/
-/*
-.subscription-container-checkbox {
-  display: flex;
-  flex-direction: column;
-}
-*/
 .subscription-checkbox-text {
   margin-bottom: 30px;
 }
@@ -187,9 +172,6 @@
 .subscribe-label-check {
   line-height: 1.5em;
 }
-/* .subscription-image img {
-    object-fit:none;
-  } */
 
 /*-----------375px---------*/
 @media screen and (min-width: 375px) {
@@ -223,7 +205,7 @@
     color: var(--sapphire-main-cl);
     font-size: 18px;
     line-height: 1.5;
-    width: 536px;
+
     height: 54px;
     margin-bottom: 30px;
   }
@@ -237,11 +219,11 @@
     width: 100%;
   }
 
+  .subscription-right-container {
+    max-width: 536px;
+  }
   .subscription-form {
     align-items: baseline;
-  }
-  .subscription-container-checkbox {
-    /* min-width: 536px; */
   }
 
   .subscription-button {
@@ -273,20 +255,9 @@
     justify-content: center;
     align-items: center;
   }
-  /*
-  subscription-section {
-    display: flex;
-    padding: 100px 172px;
-    flex-direction: row;
-  }*/
 
   .subscription-container-image {
     max-width: 460px;
     max-height: 410px;
   }
-
-  /*
-  .subscription-right-container {
-    margin-right: 100px;
-  }*/
 }
