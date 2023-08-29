@@ -3,11 +3,15 @@
     openModalBtn: document.querySelectorAll('[data-menu-open]'),
     closeModalBtn: document.querySelector('[data-menu-close]'),
     modal: document.querySelector('[data-menu]'),
+    closeMenuLink: document.querySelectorAll('.header-menu-list-item-link'),
   };
 
   refs.openModalBtn.forEach(element => {
     element.addEventListener('click', toggleModal);
   });
+  refs.closeMenuLink.forEach(item =>
+    item.addEventListener('click', toggleModal)
+  );
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   //* Закривання по кліку на бекдроп
